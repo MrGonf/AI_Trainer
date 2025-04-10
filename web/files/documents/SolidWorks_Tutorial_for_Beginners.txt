@@ -1,0 +1,537 @@
+from this tutorial we will start new
+training series
+for solidworks 2020. if you want to see
+more such type of videos then please
+subscribe to my channel
+and press the bell icon let's start
+when you start solidworks many of you
+may be seeing this welcome window
+you can start working in part
+environment
+by clicking on this part button here and
+if you don't have this welcome window
+then
+you will have to click here on new
+button
+it will show this window if you have
+selected advance
+and if you have selected this then it
+will show this window
+so in this window you can start part by
+clicking here
+and by clicking on ok
+and if you have this advanced window
+select this part and click on ok
+so it will start part environment now
+in this tutorial at first we will learn
+some basic
+sketch commands to switch to sketch
+environment
+click here on sketch and click here
+on this sketch button as we are only
+going to create
+some 2d sketches therefore you can
+select
+any plane suppose i will select this top
+plane now here
+i have selected this mmgs unit
+by clicking on this you can choose your
+desire unit
+so they have provided mks cgs
+ips and mmgs so i will be working with
+this
+mmgs units so this mmgs
+have millimeter gram and second click
+outside
+first command we will learn line here is
+the line command
+keyboard shortcut is l click on line
+then you will have to specify first
+point
+always ensure that when starting a new
+sketch
+always use this origin so that your
+sketch will be fully defined
+and properly constrained click first
+point here
+take your cursor away now here in this
+yellow box
+you can see that there is horizontal
+line
+this yellow box with some symbol is
+called as
+relations so it indicates horizontal
+relation
+that means the line you are going to
+create will be horizontal
+and here also you can see that angle
+indicated is 180 degree
+click to stop line command press escape
+so here this horizontal line is created
+and this horizontal relation has been
+applied to it
+to give dimension to this line click
+here on smart dimension
+click on this line take your cursor
+below
+and click specify length of line suppose
+i want
+line of 80 distance type there 80
+and press enter and to stop dimension
+command
+press escape so here this line of 80
+distance is
+created click on line
+take your cursor to this end point these
+two circle indicates
+it is catching endpoint click and take
+your cursor above
+so here now it is showing yellow box
+with vertical line
+that means your line is straight and is
+vertical
+click then by clicking points
+you can create your shape as per your
+requirement
+and as you take your cursor here you can
+see that
+it is automatically tracking from the
+origin click there
+and click once your shape got close
+line command automatically stopped there
+and
+it has filled with blue color the
+meaning of this filling is that
+this shape is perfectly close and is
+suitable for
+3d creation and if you don't want to see
+this filling
+then you can turn it off by clicking on
+this shaded sketched contours
+so it will remove those filling but i
+will recommend you
+to keep this filling because it will be
+very useful
+when creating 3d objects
+to stop line command press escape
+here also you can observe there are two
+colors for
+line object one is in blue color and one
+is in
+black color the object which are with
+black color
+for which location is defined with
+respect to this
+origin and suppose if you want to
+convert this horizontal line into black
+color
+you will have to define location of that
+line the location of this line will be
+the length of this line
+so click on smart dimension
+click on this line take your cursor on
+this side and click
+then specify length and press enter
+so here you can see that this line is
+also converted to black color
+right now this sketch is under defined
+the meaning of under defined
+is you still will have to give
+parameters and dimensions to completely
+define this sketch
+suppose we will also give length of this
+line 25
+enter then press escape then suppose i
+want this line
+collinear with this line so to
+add relations select this line
+press ctrl and select this line
+so here list of relations has been shown
+from here you can add this make
+collinear
+so they will become collinear and this
+symbol of collinear is added
+which shows that these two lines are
+collinear
+click outside and these two lines has
+become black
+because they are properly defined
+again smart dimension suppose i want to
+give length of this line
+as 25 enter
+then length of this line again as 25
+enter click outside now if you see that
+complete sketch got black color and it
+has been said here that
+it is fully defined now if you try to
+give dimension
+then it will be over defined suppose if
+i try to give length of this line
+and click here it will give error
+that make dimension driven and your
+sketch got
+over defined because this dimension is
+not necessary
+as we have already specified this total
+length
+and we have defined these two lengths
+that means
+this length can be easily work out or
+there is no need to specify this length
+because this length is already included
+in this length
+so this problem can be solved in two
+ways you can make this dimension as a
+driven
+or you can leave this dimension as
+driving
+if you need this dimension as a
+reference dimension
+then you can make this dimension as a
+driven
+click on ok and click outside
+so here this driven dimension is shown
+in gray color
+and all the other dimension are shown in
+black color
+the meaning of this driven dimension is
+that if i
+change any dimension in this line this
+will get
+changed suppose if i change
+this dimension to change dimension
+you will have to double click on that
+dimension so here
+dialog box will appear here you will
+have to specify
+change dimension suppose i want it 20
+enter so here you can see that it
+automatically got 35
+and the black dimension remain as it is
+so that is the meaning of driven
+dimension so it will get
+changed automatically without giving any
+indication to you
+then press escape to stop dimension
+command
+then suppose i want to make this
+dimension as a driven dimension
+for that click on this dimension line of
+this dimension
+right click and here you will have to
+click on this driven
+and press escape so here you can see
+that this dimension has become driven
+and suppose i want to convert this
+dimension to driving dimension
+again click on this line right click
+and click on this driven so that it
+will
+make this dimension driving so
+if i now change this dimension to 20
+enter so here you can see that now this
+dimension got
+changed so this is the concept of driven
+and driving dimension i don't want this
+dimension
+so just click and press delete button
+so that dimension is removed again click
+on smart dimension
+again select this line take your cursor
+above and click
+and if you click on this leave this
+dimension driving
+and click on ok then your sketch will
+become
+over defined so once your sketch got
+over defined then you have two options
+you can either delete one of the not
+required dimension
+or you can convert one dimension to
+driven dimension
+suppose i don't want this dimension so
+select it and delete it
+so here you can see that our sketch is
+fully defined
+then press escape to remove these
+objects
+press first mouse button and drag the
+mouse and release the mouse
+and then press delete button on keyboard
+then
+if you want to create some reference
+center lines
+for that click on this arrow near line
+and click on center line
+then suppose i want to create one center
+line from this point click there
+and click here then to stop
+center line here double click so it will
+stop creating that center line further
+ahead
+but your centerline command will be
+still running so
+i can create one more here and again
+double click
+i need one more here
+then double click and escape so here you
+can see that
+these two lines are black because they
+are
+attached to this origin but this line is
+blue
+because we have not given any dimension
+so to make it black
+we will have to place one dimension
+click on smart dimension
+select this line select this line take
+your cursor below
+suppose i want dimension of 100 enter
+press escape so here this line also got
+black then to pan this drawing you will
+have to press ctrl
+press middle mouse button and drag the
+mouse
+to zoom it rotate middle mouse button
+towards you
+then it will zoom it and if you rotate
+middle mouse button towards monitor
+then it will zoom minus suppose i will
+zoom it
+i will rotate middle mouse button
+towards me then suppose i want to create
+one circle here for that click here on
+circle
+take your cursor on this origin click
+center point here
+on origin take your cursor away and
+click
+then i want to create circle on the
+intersection of these two center lines
+so take your cursor there here it is
+showing intersection
+object snap click there
+and click press escape
+for dimension click on smart dimension
+select this circle take your cursor
+outside and click
+specify diameter of 60 enter
+we will just pan it below press ctrl
+press middle mouse button and drag the
+mouse
+then click on the circle take your
+cursor outside
+and click specify diameter of 40
+enter press escape
+and suppose i want to create one tangent
+line
+so click on this line take your cursor
+here
+and click take your cursor on this side
+once it shows the tangent symbol click
+there
+and double click so here tangent
+line has been created and suppose if you
+want to create
+line away you can also create it away
+press escape to apply tangent object
+snap
+select the circle press ctrl select this
+line
+and from here you can apply tangent
+relation
+click click outside
+select the circle press ctrl and click
+on this line
+again click on make tangent so here this
+line got tangent
+properly then suppose if you want to
+remove these extra lines
+you will have to use trim entities click
+on trim entities
+easiest method is trim to closest
+in this method it will remove the object
+on which you clicks
+so here you can see that here is a extra
+line
+that also we can remove to see complete
+object
+you can directly click on this zoom to
+fit or you can also press
+f so here this has been trimmed properly
+then same way you can remove these
+internal objects also
+just click on it so those objects will
+be
+removed you can also use zoom to area
+to zoom a particular area click
+then press first mouse button drag the
+mouse and release the mouse
+press escape and click
+again zoom to fit now here you can see
+that
+still it is not shaded for 3d objects
+so there is one more problem here again
+zoom to area
+press first mouse button drag the mouse
+release the mouse
+press escape and click
+zoom to fit so here it got properly
+filled
+that means it is properly closed
+this power trim is also useful tool
+suppose i want to remove these outside
+center lines
+then click on this power trim to use
+power trim you will have to press first
+mouse button
+and drag the mouse so whichever object
+is crossed
+by this gray line those objects will be
+trimmed
+so that is power trim then corner
+for corner we can create some objects
+suppose i will create some lines so that
+it will be easy to explain corner
+double click click and escape
+then again trim entities then corner
+then suppose i want to remove this
+portion so in the case of corner you
+will have to click on the objects you
+want to keep
+so it will remove the objects ahead of
+that intersection
+point just click on the objects you want
+to
+keep suppose i want to keep object from
+this side
+so click on this line so in this way you
+can use corner
+so it will trim it and it will also
+extend suppose if i click on this line
+and this line
+so it will extend this line and it will
+create corner
+so in this way you can use corner tool
+then trim away inside press escape
+i will create some more lines
+zoom there pan it escape
+then click on trim entities trim away
+inside
+for this you will have to define
+boundary inside which you want to trim
+the object
+click on the object you want to trim so
+it will automatically trim
+object from inside this boundary and you
+can also use window selection
+press first mouse button and drag the
+mouse and release the mouse
+it will automatically select those
+objects and in this case
+it will remove internal objects press
+escape
+then for undo you can click here on undo
+and
+ctrl z is shortcut so i will just undo
+it
+again trim entities next is trim away
+outside
+click then select objects
+outside which you want to trim so i will
+select these two lines
+i will use this window selection click
+first mouse button drag the mouse and
+release the mouse
+so here objects from both the sides has
+been removed with reference to
+these two lines and we have already seen
+this trim to closest
+trim to closest can also be used for
+removing the
+objects zoom to fit
+then there are two more options keep
+trimmed entities as construction
+geometry
+so even though you trim it it will keep
+it as a reference
+line suppose i will just undo it
+so i will have those objects
+and i will click on trim entities then i
+will take here
+keep trim entities as construction
+geometry
+and suppose i will trim this line so
+here you can see that
+that line has been trimmed but it has
+been kept as a reference geometry or
+construction geometry
+so this geometry will be there for
+reference but
+it will not be the part of your sketch
+for 3d creation
+so in this way you can use this trim
+entities as construction
+geometry then there is ignore trimming
+of construction geometry
+now these are the construction
+geometries if you tick here
+and suppose if i use this power trim so
+when i will power trim
+it will only trim the entities it will
+not remove these construction
+objects so even though you take your
+cursor over it
+it will not remove it so this is a very
+useful feature
+because number of times we want to
+remove actually main objects and we
+don't want to remove
+center lines or reference lines press
+escape
+one more command we will see that is
+mirror entities
+we'll just pan it and we will create one
+entity here
+for mirror
+suppose i will create one sketch like
+this
+press escape for mirror you will have to
+create
+center line also to define as a mirror
+center line click on center line
+and i will create one horizontal center
+line
+double click and one vertical center
+line
+press escape i want to mirror this
+entity
+select this entity using windows
+selection
+click on mirror entities
+click here on mirror about
+and select the center line and click on
+ok so here this mirror has been created
+around this center line
+again mirror entities select these lines
+if you want you can remove the original
+object and keep the mirror image
+suppose i want this object below on the
+opposite side
+and i want to remove from here for that
+remove this copy option
+click here on mirror about and select
+this horizontal center line
+and click on ok so here it has removed
+the original object
+and it has kept mirror entity so in this
+way you can use mirror entities
+then sometimes if you rotate this object
+by mistake
+you can go back to original view by
+clicking here on previous view
+zoom to fit so that's all in the next
+tutorial
+we will solve some exercises based on
+this theory lecture
+so thanks for watching we will stop here

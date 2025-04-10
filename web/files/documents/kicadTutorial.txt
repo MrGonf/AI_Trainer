@@ -1,0 +1,222 @@
+[Music] hi and welcome to getting started with 
+kicad I'm Sean he Mel and throughout this video  
+series I'll be showing you how to create this 
+custom board from scratch if you're curious  
+we'll be making a badge that pulses a couple of 
+LEDs the white area around the LEDs allows you  
+to draw or write something fun using a sharpie 
+that way you can customize and wear your badge  
+with pride at your next event don't worry you can 
+erase the sharpie with a little bit of rubbing  
+alcohol I worked with my friends at digi-key to 
+make these videos whenever I'm creating a custom  
+PCB I always check digi-key first for components 
+in fact we'll be using their site later in this  
+series to order parts for the board but first 
+let's talk about why you would even want to make  
+a PCB in the first place in the 1960s telephone 
+crossbar switches like the one shown here used  
+a wiring technique that involved wrapping small 
+gauge wire around posts if we zoom in we can see  
+the individual wire wraps and notice that no 
+solder was used to make these connections as  
+electronics became more popular in the 60s and 
+70s the wire wrapping technique was adapted to  
+connect components together wire wrapping is an 
+art unto itself often resulting in striking and  
+beautiful patterns on the back of boards even 
+though wire wrapping could be automated it was  
+still relatively expensive and time consuming in 
+the 1980s surface mount technology was gaining  
+in popularity which ultimately resulted in 
+electronics that were faster and cheaper  
+to produce prior to surface mount boards were 
+made with through-hole technology if conductive  
+material is added to the inside of a hole to 
+allow for a better connection this is known as  
+a plated through-hole or PTH as you can see on 
+this 1984 Sinclair QL computer the components  
+were much larger and had leads that poke through 
+holes in the board you would generally need to  
+solder the leads to the board on the opposite 
+side if you look closely at this Raspberry Pi  
+you'll see that the electronic components do not 
+have leads that extend through the board instead  
+the components are placed in solder on just one 
+layer this is known as surface mount technology  
+or SMT surface mount technology is great when your 
+mass producing hundreds or thousands of boards but  
+it can be a pain disorder by hand so we're gonna 
+stick to plated through-hole parts for our board  
+it just makes things a little easier now that 
+you know the history what is a PCB well it's an  
+acronym that stands for a printed circuit board it 
+is a board or card that electrically connects and  
+mechanically supports electrical components these 
+connections are made with a series of conductive  
+tracks or traces usually copper and this copper 
+is laminated onto or in between sheets of non  
+conductive material like fiberglass if you were 
+to take a cross section of a PCB and examine  
+it under a microscope you would see a number of 
+layers the substrate is the rigid or semi rigid  
+material that holds everything together most 
+PCBs you come across will use fiberglass and  
+cured epoxy resin the epoxy is normally flame 
+resistant and likely meets the flame-retardant  
+grade for standard which is where fr4 comes from 
+you'll often hear people refer to this material as  
+just fr for a thin sheet of copper is pressed and 
+heated onto the substrate this would be a single  
+layer board which means that only one side of the 
+board has conductive material on it another layer  
+of copper can be added to the other side making 
+it a 2 layer board which is what we'll be using  
+you can even add more layers of substrate and 
+copper to make multiple layered boards but we  
+won't need to worry about those for this project 
+they usually cost more and are reserved for more  
+complex PCB layouts for our plated through holes 
+a drill bores out a chunk of copper and substrate  
+a thin layer of copper is then added to the inside 
+of the hole using a process called electroplating  
+note that this also deposits copper on all exposed 
+surfaces so your main copper layer grows a tiny  
+bit this small layer of conductive material is 
+how you can make electrical connections between  
+different layers of copper and is known as a 
+plated through-hole copper is then etch door  
+removed from the top and bottom layers leaving 
+only the traces and pads that you specified  
+in your design we could stop here and you would 
+have a perfectly usable two layer PCB this board  
+was made on a bantam tools PCB milling machine 
+where copper is milled or routed off the board I  
+can easily solder components to this and it would 
+work well for a project or a prototype however it  
+can be nice to add a layer of protection and help 
+prevent short circuits when you say accidentally  
+move a screwdriver across the board so a solder 
+mask layer is often applied on top of most of the  
+board this normally consists of a lacquer like 
+polymer and is only put on surfaces where we  
+don't want to solder components to it also helps 
+prevent solder from creeping down the traces or  
+jumping between traces traditionally this is green 
+but ours will be purple because that's just the  
+way our spark rolls when designing our board were 
+usually worried about areas where we don't want  
+solder mask to be which we'll call solder mask 
+keep out these will usually be colored areas on  
+a layer around things like pins and pads places 
+where we want exposed copper such as the top and  
+bottom of our through-hole shown here copper can 
+oxidize which makes soldering to it difficult so  
+most manufacturers will add a surface finish we'll 
+have our board house use an electrolysis immersion  
+gold or enig finish this gives any exposed traces 
+or pads a gold color mix soldering easier and  
+helps protect the copper underneath finally many 
+board manufacturers will add a layer of ink in  
+any pattern we want to help us identify components 
+name the board or add silly artwork this is known  
+as a silkscreen layer it's normally white but 
+sometimes a board house will let us pick another  
+color if we go back to our raspberry pi we can see 
+the bare substrate which is brown or tan in color  
+some exposed copper which has been given a gold 
+colored finish green solder mask on most of the  
+board and white silk screen if you were to slice 
+into the PCB and look at a cross-section under  
+a microscope you would find that the Raspberry 
+Pi has six layers of copper which is a lot more  
+complicated than the board we'll be making with 
+the basic understanding of how PCBs are made let's  
+talk about what it takes to design one these days 
+most PCBs are designed in a computer-aided design  
+software or CAD program for short while each PCB 
+CAD program operates a little differently they  
+all generally have a similar flow it's important 
+to keep in mind that kicad is really a collection  
+of programs that work together to help you design 
+a board the first step is to design your circuit  
+and this can be based on something you found 
+online created in a simulator or constructed  
+on a breadboard we won't cover circuit design in 
+these videos as that's really outside the scope of  
+building a PCB in fact we already have the circuit 
+designed it's just a 555 timer that causes some  
+LEDs to fade in and out before we can create a 
+schematic we may need to create custom schematic  
+symbols if we can't find some in the kicad or 
+digi-key libraries we then draw our circuit in  
+the software schematic capture program which is 
+known as EE schema in kicad we can research the  
+exact parts we need on digi Keys website from 
+there we can look at each part datasheet to  
+determine what the footprint should be when I say 
+footprint I'm referring to the configuration of  
+pads and holes on the PCB used to mechanically 
+and electrically attach components for example  
+these eight holes make up the footprint for 
+our 555 timer component if we can't find the  
+footprints for our parts in the libraries we'll 
+need to create our own using the kicad footprint  
+editor then we use cvpcb to associate schematic 
+symbols with footprints still in EE schema we  
+generate a netlist which is just a text document 
+that tells which pins are electrically connected  
+to other pins in the circuit we open up our board 
+layout program known as pcbnew and set up our  
+design rules as specified by the PCB manufacturer 
+which we can usually find on their website we then  
+import our netlist which places our parts in the 
+program we move the parts around as we see fit and  
+draw copper connections known as traces between 
+the necessary pins after that we generate a set of  
+files known as Gerber's that represent the various 
+layers of the board we wish to make we can use the  
+view program in kicad to examine these files 
+before we send them to the manufacturer finally  
+we create a bill of materials or bomb and order 
+the electronic components from digi-key once  
+all the parts arrive we can solder them to the 
+board to build the badge there are a number of  
+PCB layout programs out there but in this series 
+we'll be looking at kicad kicad is free and open  
+source which makes it great for learning how to 
+make your own PCBs but it's also powerful enough  
+to do more complicated work for example the guts 
+of this olam X DIY laptop were designed entirely  
+in kicad if you're following along with these 
+videos and you feel that you need some additional  
+material to help you along I highly recommend 
+checking out Chris Gamble's tutorials on kicad  
+which he titles getting to blinky for point out 
+Chris takes a slightly different span and shows  
+a few different tools which can be very useful 
+when learning a new program Chris also helps  
+run the kicad forums which you can find at forum 
+kicad info here you can search for answers and  
+ask questions to the community if you get stuck 
+all right enough talking let's go download kicad  
+so we can start making our board on the next 
+episode head to kicad - PCB org and click the  
+big download button choose your operating system 
+which is windows for me follow any directions you  
+might see here for example I'll choose to download 
+the 64-bit version as I'm running a 64-bit version  
+of Windows 10 follow whatever instructions are 
+necessary to install kicad which could include  
+running the Windows executable installing the 
+disk image on Mac OS calling apt-get in Debian or  
+building it from source code if you're so inclined 
+if presented with installation options keep  
+everything the default open kicad and you'll be 
+presented with the project manager will create our  
+555 timer badge project here and begin designing 
+our board but that'll be on the next episode I  
+hope this has given you some insights into how and 
+why PCBs are made feel free to come back to this  
+episode if you feel that you need a refresher on 
+some of these terms see you next time you [Music]
